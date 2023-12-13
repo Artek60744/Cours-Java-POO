@@ -19,10 +19,24 @@ public class Main {
         System.out.println("Entier_1:"+paire2.getx()+" Entier_2:"+paire2.gety());
 
         Paire arrayPaire[] = {paire1, paire2, paire3, paire4, paire5};
-        Tri.Tribulle(arrayPaire);
-
+        System.out.println("\nLe tableau non trier");
         for (int i = 0; i < arrayPaire.length; i++) {
             arrayPaire[i].affiche();
+        }
+
+        Tri.Tribulle(arrayPaire);
+
+        System.out.println("\nLe trie bulle");
+        for (int i = 0; i < arrayPaire.length; i++) {
+            arrayPaire[i].affiche();
+        }
+
+        Paire arrayPaire2[] = {paire1, paire2, paire3, paire4, paire5};
+        Tri.TriInsertion(arrayPaire2);
+
+        System.out.println("\nLe trie par insertion");
+        for (int i = 0; i < arrayPaire.length; i++) {
+            arrayPaire2[i].affiche();
         }
 
     }
