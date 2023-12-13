@@ -4,21 +4,29 @@ public class Point {
 	// deux attributs de type int 
 	int abscisse; 
 	int ordonnee;
+	
+	// Petit (5)
+	static int nombre;
+	int numero;
 
 	// constructeur 
 	Point(){ 
-		abscisse = 0 ;
-		ordonnee = 0 ;
+		this.abscisse = 0 ;
+		this.ordonnee = 0 ;
+		this.numero = nombre;
+		nombre ++;
 	}
 
 	// constructeur 2
 	Point(int u, int v){ 
 		this.abscisse = u ;
 		this.ordonnee = v ;
+		this.numero = nombre;
+		nombre ++;
 	}
 
     void affiche(){
-        System.out.println("Abscisse:"+this.abscisse+" Ordonnée:"+this.ordonnee);
+        System.out.println("Numero:"+this.numero+" Nombre:"+nombre+" Abscisse:"+this.abscisse+" Ordonnée:"+this.ordonnee);
     }
 
 	// méthode permettant de changer les coordonnées d’un point 
