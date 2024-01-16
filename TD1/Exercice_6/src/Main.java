@@ -35,8 +35,16 @@ public class Main {
         Tri.TriInsertion(arrayPaire2);
 
         System.out.println("\nLe trie par insertion");
-        for (int i = 0; i < arrayPaire.length; i++) {
+        for (int i = 0; i < arrayPaire2.length; i++) {
             arrayPaire2[i].affiche();
+        }
+
+        Paire arrayPaire3[] = {paire1, paire2, paire3, paire4, paire5};
+        Tri.TriFusion(arrayPaire3);
+
+        System.out.println("\nLe trie par fusion");
+        for (int i = 0; i < arrayPaire3.length; i++) {
+            arrayPaire3[i].affiche();
         }
 
     }
