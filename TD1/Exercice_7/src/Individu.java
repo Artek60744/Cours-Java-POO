@@ -1,5 +1,7 @@
 package src;
 
+
+
 public class Individu {
 
     String nom;
