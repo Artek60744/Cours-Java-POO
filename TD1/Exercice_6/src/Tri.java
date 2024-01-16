@@ -22,25 +22,27 @@ public class Tri {
 
     }
 
-    public static void TriInsertion(Paire arrPaire[]){
+    public static void TriInsertion(Paire arrPaire[]) 
+     {  
+          int taille = arrPaire.length;  
         
-        for (int i = 1; i < arrPaire.length; i++)
-        {
-            Paire paire_temp = new Paire(arrPaire[i]);
-            int j = i-1;  
-            while(j >= 0 && Paire.comparaison(arrPaire[j], arrPaire[i]) == 1)  
-            {
-                arrPaire[j+1].setx(arrPaire[j].getx());
-                arrPaire[j+1].sety(arrPaire[j].gety());
-                j--;
-            }  
-            arrPaire[j+1].setx(paire_temp.getx());
-            arrPaire[j+1].sety(paire_temp.gety());
-        }
-    }
+          for (int i = 1; i < taille; i++)
+          { 
+               Paire index = arrPaire[i];
+
+               int j = i-1;  
+            
+               while(j >= 0 && (Paire.comparaison(arrPaire[j], index) == 1))
+               {
+                    arrPaire[j+1] = arrPaire[j];  
+                    j--;  
+               }  
+               arrPaire[j+1] = index; 
+        }  
+     }
 
     public static void TriFusion(Paire arrPaire[]){
-
+        
     }
 
 }
