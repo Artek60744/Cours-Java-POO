@@ -12,5 +12,5 @@ public class Main {
         System.out.println("Il y a "+individuList.size()+" individu créer:");
         individuList.forEach(individu -> System.out.println(individu.toString()));
     }
-
+    
 }
