@@ -1,19 +1,20 @@
-package src;
-
 public class Individu {
 
     String nom;
+    String prenom;
     String adresse;
     String numero;
-    
+
     Individu(){
         this.nom = "";
+        this.prenom = "";
         this.adresse = "";
         this.numero = "";
     }
 
-    Individu(String nom, String adresse, String numero){
+    Individu(String nom, String prenom, String adresse, String numero){
         this.nom = nom;
+        this.prenom = prenom;
         this.adresse = adresse;
         this.numero = numero;
     }
@@ -38,6 +39,9 @@ public class Individu {
         return this.numero;
     }
 
+    public void afficher(){
+        System.out.println(this.toString());
+    }
     public String toString(){
         return "Monsieur "+this.nom+", habite à "+this.adresse+" et a pour numéro de téléphone :"+this.numero+".";
     }
