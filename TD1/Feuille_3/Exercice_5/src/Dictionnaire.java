@@ -18,4 +18,7 @@ public class Dictionnaire extends Document{
         this.nb_tomes = nb;
     }
 
+    public String toString(){
+        return super.toString()+", langue:"+ this.langue +", Nb_Tomes:"+this.nb_tomes;
+    }
 }

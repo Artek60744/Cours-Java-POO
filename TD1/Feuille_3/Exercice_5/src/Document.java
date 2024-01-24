@@ -14,4 +14,8 @@ public class Document {
         this.titre = t;
     }
 
+    public String toString(){
+        return "Le document à pour numéro:"+this.numero+" et pour titre:"+this.titre;
+    }
+
 }

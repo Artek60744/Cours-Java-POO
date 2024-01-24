@@ -18,4 +18,16 @@ public class Livre extends Document{
         this.nb_pages = nb;
     }
 
+    public String getAuteur(){
+        return this.auteur;
+    }
+
+    public int getNb_page(){
+        return this.nb_pages;
+    }
+
+    public String toString(){
+        return super.toString()+", auteur:"+ this.auteur +", Nb_Pages:"+this.nb_pages;
+    }
+
 }
