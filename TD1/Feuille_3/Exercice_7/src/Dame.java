@@ -1,11 +1,16 @@
 package src;
 
 public class Dame extends Humain{
-    String couleur_robe;
-    boolean captive;
+    private String couleur_robe;
+    private boolean captive;
 
+    Dame(String nom) {
+        super(nom, "lait");
+        this.couleur_robe = "blache";
+        this.captive = false;
+    }
     Dame(String nom, String couleur_robe, boolean captive) {
-        super(nom);
+        super(nom, "lait");
         this.couleur_robe = couleur_robe;
         this.captive = false;
     }
@@ -22,6 +27,11 @@ public class Dame extends Humain{
 
     @Override
     public String quelEstTonNom() {
-        return "Miss " + this.quelEstTonNom();
+        return "Miss "+super.quelEstTonNom();
+    }
+
+    @Override
+    public void presentation() {
+        parle("");
     }
 }
