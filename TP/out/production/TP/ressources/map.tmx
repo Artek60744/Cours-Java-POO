@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="1">
+ <editorsettings>
+  <export target="map.tmx" format="tmx"/>
+ </editorsettings>
  <tileset firstgid="1" name="sable" tilewidth="32" tileheight="32" tilecount="15" columns="5">
   <image source="pack2/beach_sand_woa_0.png" width="174" height="114"/>
  </tileset>
