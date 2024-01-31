@@ -27,8 +27,11 @@ public class Brigand extends Humain {
     }
 
     public void kidnapper(Dame dame1){
+        if (!dame1.kidnapper()){
+            System.out.println("La Dame ne peux pas être kidnaper");
+            return;
+        }
         this.nb_enlever++;
-        dame1.kidnapper();
         enlever.add(dame1);
         this.recompence += 100;
         this.parle("Ah ah !"+dame1.quelEstTonNom()+", tu es mienne désormais !");

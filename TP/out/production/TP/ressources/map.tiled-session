@@ -1,0 +1,27 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "Tous les Fichiers (*)",
+    "fileStates": {
+        "#halfe": {
+            "scaleInEditor": 1
+        },
+        "#water": {
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Users/Charles/Documents/GitHub/Cours-Java-POO/TP/port/ressources",
+    "last.imagePath": "C:/Users/Charles/Documents/GitHub/Cours-Java-POO/TP/port/ressources/pack2",
+    "map.lastUsedExportFilter": "Fichiers de carte Tiled (*.tmx *.xml)",
+    "openFiles": [
+    ],
+    "project": "map.tiled-project",
+    "recentFiles": [
+    ],
+    "tileset.embedInMap": true
+}

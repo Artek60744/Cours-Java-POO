@@ -15,9 +15,13 @@ public class Dame extends Humain{
         this.captive = false;
     }
 
-    public void kidnapper() {
-        this.captive = true;
+    public boolean kidnapper() {
+        if(!this.captive)
+            this.captive = true;
+        else
+            return false;
         parle("Ah ! je suis kidnappée !");
+        return true;
     }
 
     public void liberer(Cowboy cowboy) {
